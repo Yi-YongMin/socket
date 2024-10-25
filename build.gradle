@@ -18,8 +18,20 @@ repositories {
 }
 
 dependencies {
+    //for Websocket
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    //dependencies for test
+    // Jackson for processing JSON data
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    // Spring Boot Starter for multi-thread
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    // to link WebRTC (not necessary)
+    implementation 'org.webrtc:google-webrtc'
+    // network communicate by Netty (not necessary)
+    implementation 'io.netty:netty-all'
+    //2 dependencies for test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
