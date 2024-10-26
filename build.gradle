@@ -27,8 +27,6 @@ dependencies {
     // Lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    // to link WebRTC (not necessary)
-    implementation 'org.webrtc:google-webrtc'
     // network communicate by Netty (not necessary)
     implementation 'io.netty:netty-all'
     //2 dependencies for test
